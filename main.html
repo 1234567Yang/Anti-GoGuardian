@@ -19,33 +19,40 @@
         var times;
         function load()
           {
-            document.getElementById("i1").src=document.getElementById("input1").value;
-            setTimeout("console.log (1)", 3000 );
-            setTimeout("check()", 3000 );
+           var time; document.getElementById("i1").src=document.getElementById("input1").value;
+            time = document.getElementById("InputTime").value
+            setTimeout("console.log (1)", time );
+            setTimeout("check()", time );
 
           }
       
       function check(){
         console.log (2)
-        if(document.getElementById("i1").src=document.getElementById("input1").value) {
-document.getElementById("p1").innerHTML = "successed";}
-else {
+    if(document.getElementById("i1").src == document.getElementById("input1").value)
+    {
+document.getElementById("p1").innerHTML = "successed";
+        return "";
+        }else {
+          
   //document.getElementById("i1").src=document.getElementById("input1").value
 document.getElementById("p1").innerHTML = "working on, if you press ←, it will be better.";
   times = times + 1;
+          
   if(times > 5){
+    console.log("times bigger than 5, refresh.");
     times = 0;
     refresh();
+    return "";
   }
   setTimeout("load()", 1 );
-      
+      return "";
      }
+    }
         function refresh(){
-          var ifm=document.createElement("iframe");
+          var ifm = document.createElement("iframe");
           ifm = document.getElementById("i1");
          load()
         }
-      }
       function Refuse() {
         console.log("refuse to close..");
         return "refuse to close...";
