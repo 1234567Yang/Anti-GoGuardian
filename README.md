@@ -17,6 +17,7 @@ if(document.getElementById("i1").src == document.getElementById("input1").value)
 '''
 seemed not work. the link of the page did not change. I do not know how to see if the website elements have been changed so the code did not work 100%.
 If anyone could help me, please just send me a email or creat a pull requests. 
+By the way, I am not good at JavaScript, I just learned some beginner code and my English is my second language, so there may be some gramma mistakes in this file, you can start a issues if you found one.
 <br>
 Thank you.
 
