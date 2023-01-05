@@ -12,6 +12,9 @@
   <p id="p1">
     hit
   </p>
+    <p id="p2">
+    out information
+  </p>
     <iframe id="i1" src="" style="”left:0;top:0;height:100%;width:100%;”">
 
     </iframe>
@@ -27,8 +30,10 @@
           }
       
       function check(){
-        console.log (2)
-    if(document.getElementById("i1").src = document.getElementById("input1").value)
+        console.log (2);
+        document.getElementById("p2").innerHTML=document.getElementById("i1").src
+        
+    if(document.getElementById("i1").src == document.getElementById("input1").value)
     {
 document.getElementById("p1").innerHTML = "successed";
         return "";
