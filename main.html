@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body><button onclick="load()">
+        1111
+    </button>
+    <input id="input1">
+  <p id="p1">
+    hit
+  </p>
+    <script language="javascript">
+        function load()
+          {
+            document.getElementById("i1").src=document.getElementById("input1").value;
+            setTimeout("console.log (1)", 3000 );
+            setTimeout("check()", 3000 );
+
+          }
+      
+      function check(){
+        console.log (2)
+        if(document.getElementById("i1").src=document.getElementById("input1").value) {
+document.getElementById("p1").innerHTML = "successed";}
+else {document.getElementById("i1").src=document.getElementById("input1").value
+}
+      }
+    </script>
+    <iframe id="i1" src="" style="”left:0;top:0;height:100%;width:100%;”">
+
+    </iframe>
+    <p id="p1">
+        edw
+    </p>
+    <p id="p2">
+        edw
+    </p>
+    <button onclick="Ms()">
+        fvcxvx
+    </button>
+    <script language="javascript">
+        function Ms()
+          {
+        document.getElementById("p1").innerHTML=window.frames["i1"].window.childMethod();
+        document.getElementById("p2").innerHTML=window.frames["i1"].window.childValue;
+          }
+    </script>
+
+
+</body>
+
+</html>
