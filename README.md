@@ -2,12 +2,12 @@
 This repository is still testing, it does not work full auto now.
 You can unblock by these steps:
 1:Open the file and enter the link you want to open.
-<br>
-*Please Notiece that not all website can be open by this way because some websites do not allow us to use iframe*
-<br>
+<br><br>
+**Please Notiece that not all website can be open by this way because some websites do not allow us to use iframe**
+<br><br><br>
 2: pressing the left symbol on your Chromebook 【← , just on the left hand on the top】 when it hits you that the website was blocked.
 If it does not work, just press it again and again quickly or you can refresh the page.
-<br>
+<br><br>
  ## Issues:
 The code:
 diff'''
