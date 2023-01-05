@@ -2,14 +2,21 @@
 
 <head></head>
 
-<body><button onclick="load()">
-        1111
+<body onbeforeunload="return Refuse()"><button onclick="load()">
+        Unblock
     </button>
-    <input id="input1">
+  <br>
+    <input id="input1" placeholder="The link" style="width:100%;" value="https://www.bilibili.com/">
+  <br>
+    <input id="InputTime" placeholder="How long did the website usually reply(ms)" style="width:100%;" value="5000">
   <p id="p1">
     hit
   </p>
-    <script language="javascript">
+    <iframe id="i1" src="" style="”left:0;top:0;height:100%;width:100%;”">
+
+    </iframe>
+      <script language="javascript">
+        var times;
         function load()
           {
             document.getElementById("i1").src=document.getElementById("input1").value;
@@ -22,31 +29,28 @@
         console.log (2)
         if(document.getElementById("i1").src=document.getElementById("input1").value) {
 document.getElementById("p1").innerHTML = "successed";}
-else {document.getElementById("i1").src=document.getElementById("input1").value
+else {
+  //document.getElementById("i1").src=document.getElementById("input1").value
 document.getElementById("p1").innerHTML = "working on, if you press ←, it will be better.";
+  times = times + 1;
+  if(times > 5){
+    times = 0;
+    refresh();
+  }
+  setTimeout("load()", 1 );
+      
      }
+        function refresh(){
+          var ifm=document.createElement("iframe");
+          ifm = document.getElementById("i1");
+         load()
+        }
       }
+      function Refuse() {
+        console.log("refuse to close..");
+        return "refuse to close...";
+}
     </script>
-    <iframe id="i1" src="" style="”left:0;top:0;height:100%;width:100%;”">
-
-    </iframe>
-    <p id="p1">
-        edw
-    </p>
-    <p id="p2">
-        edw
-    </p>
-    <button onclick="Ms()">
-        fvcxvx
-    </button>
-    <script language="javascript">
-        function Ms()
-          {
-        document.getElementById("p1").innerHTML=window.frames["i1"].window.childMethod();
-        document.getElementById("p2").innerHTML=window.frames["i1"].window.childValue;
-          }
-    </script>
-
 
 </body>
 
