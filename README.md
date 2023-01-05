@@ -12,11 +12,12 @@ If it does not work, just press it again and again quickly or you can refresh th
 <br><br>
  ## Issues:
 The code:
-diff'''
+<br><br>
 if(document.getElementById("i1").src == document.getElementById("input1").value)
-'''
+<br><br>
 seemed not work. the link of the page did not change. I do not know how to see if the website elements have been changed so the code did not work 100%.
-If anyone could help me, please just send me a email or creat a pull requests. 
+If anyone could help me, please just creat a pull requests or an issues. 
+<br><br>
 By the way, I am not good at JavaScript, I just learned some beginner code and my English is my second language, so there may be some gramma mistakes in this file, you can start a issues if you found one.
 <br>
 Thank you.
