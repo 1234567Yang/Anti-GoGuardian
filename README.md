@@ -1,5 +1,5 @@
 # Anti-GoGuardian
-**This repository is still testing and it work on my Chromebook, it does not work full auto now.**
+**This repository is still testing and it can use on my Chromebook, it does not work full auto now.**
 <br><br>
 You can unblock by these steps:
 <br>
